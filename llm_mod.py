@@ -1,8 +1,9 @@
 
 
 import google.genai as genai
-import os
-API=os.environ.get("LLM_API")
+import streamlit as st
+
+API=st.secrets[API]
 
 client = genai.Client(api_key=API)
 def enhance_text(text):
