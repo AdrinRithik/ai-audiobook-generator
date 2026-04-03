@@ -3,7 +3,7 @@
 import google.genai as genai
 import streamlit as st
 
-API=st.secrets[API]
+API=st.secrets["API"]
 
 client = genai.Client(api_key=API)
 def enhance_text(text):
